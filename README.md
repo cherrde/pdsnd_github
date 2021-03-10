@@ -4,7 +4,7 @@
 Mar 9, 2021
 
 ### Project Title
-Bikeshare.py project
+Bikeshare Project
 
 ### Description
 This project allows a user to investigate statistics concerning bikeshare data in the cities of
