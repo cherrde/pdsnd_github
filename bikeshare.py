@@ -240,23 +240,23 @@ def raw_data(df):
 
     # Ask if the user wants to see five lines of raw data
 
-    show_raw_data = input("""\nWould you like to see raw data? yes or no.  """)
-    while show_raw_data not in ['yes','no']:
-        show_raw_data = input("""Please only select yes or no.  """)
+    show_raw_data = input("""\nWould you like to see raw data? [y]es or [n]o.  """)
+    while show_raw_data not in ['y','n']:
+        show_raw_data = input("""Please only select the first letter of [y]es or [n]o.  """)
 
     # Present Raw Data
-    if show_raw_data == 'yes':
+    if show_raw_data == 'y':
         print("\n",df[start:start ++ 5])
 
-    if show_raw_data == 'no':
+    if show_raw_data == 'n':
         return
 
-    # Ask if user would like to see 5 more lines, until the user indicates no
+    # Ask if user would like to see 5 more lines of raw data until the user indicates no
     while True:
-        show_again = input("""\nDo you want to see 5 more lines of raw data? yes or no.  """)
-        while show_again not in ['yes','no']:
-            show_again = input("""Please only select yes or no.  """)
-        if show_again == 'no':
+        show_again = input("""\nDo you want to see 5 more lines of raw data? [y]es or [n]o.  """)
+        while show_again not in ['y','n']:
+            show_again = input("""Please only select the first letter of [y]es or [n]o.  """)
+        if show_again == 'n':
             return
         start += 5
         print("\n",df[start:start ++ 5])
@@ -276,8 +276,8 @@ def main():
         user_stats(df)
         raw_data(df)
 
-        restart = input('\nWould you like to restart? Enter yes or no.\n')
-        if restart.lower() != 'yes':
+        restart = input('\nWould you like to restart? Enter [y]es or [n]o.\n')
+        if restart.lower() != 'y':
             break
 
 
