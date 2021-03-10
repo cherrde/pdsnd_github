@@ -7,11 +7,12 @@ Mar 9, 2021
 Bikeshare.py project
 
 ### Description
-Describe what your project is about and what it does
+This project allows a user to investigate statistics concerning bikeshare data in the cities of
+Chicago, New York and Washington. It provides timing data to demonstrate the power of numpy and
+pandas modules as well as statistical analysis.
 
 ### Files used
 Include the files used
 
 ### Credits
 It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
-
