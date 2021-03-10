@@ -215,11 +215,8 @@ def user_stats(df):
     if 'Birth Year' in df:
 
         earliest_birth = format(df['Birth Year'].min(), 'n')
-
         most_recent_birth = format(df['Birth Year'].max(), 'n')
-
         most_common_birth = format(df['Birth Year'].mode()[0], 'n')
-
         avg_age = format((int(time.strftime("%Y")) - df['Birth Year']).mean(),'.0f')
 
         print('Earliest Birth Year:', earliest_birth)
