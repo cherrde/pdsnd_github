@@ -201,7 +201,6 @@ def user_stats(df):
 
     print('User Types:\n{}\n'.format(user_type))
 
-
     # Display counts of gender
 
     if 'Gender' in df:
@@ -211,7 +210,7 @@ def user_stats(df):
     else:
         print('Gender data not available in this data set')
 
-    # Display earliest, most recent, most common year of birth, and average age
+    # Display earliest, most recent, most common year of birth, and average age of riders
 
     if 'Birth Year' in df:
 
